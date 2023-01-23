@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulsati - Exercício49</title>
+  </head>
+  <body>
+    <script>
+      // Escreva um programa que calcule a potência de um número.
+      function calcularPotencia() {
+        let base = parseFloat(prompt("Informe um número de base: "));
+        let expo = parseFloat(
+          prompt("Informe um número para ser o Expoente: ")
+        );
+
+        let r = Math.pow(base, expo);
+
+        console.log("A potência do numero é: " + r);
+      }
+      calcularPotencia();
+    </script>
+  </body>
+</html>

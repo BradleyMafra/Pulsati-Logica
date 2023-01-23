@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulsati - Exercício44</title>
+</head>
+<body>
+    <script>
+        // Escreva um programa que some o resto da divisão de dois números inteiros.
+        
+        let n1 = parseFloat(prompt("Informe um número: "));
+        let div1 = parseFloat(prompt("Informe o divisor do 1° numero: \n Numero informado: " + n1));
+
+        let n2 = parseFloat(prompt("Informe outro número: "));
+        let div2 = parseFloat(prompt("Informe outro numero divisor para o 2° numero: \n Número informado: "+n2));
+
+        let rest1 = n1 % div1;
+        let rest2 = n2 % div2;
+        let soma = rest1 + rest2;
+        console.log("Resto do 1° numero: "+rest1+"\n Resto do 2° número: "+rest2+" \n Total das somas: "+soma);
+
+
+
+    </script>
+</body>
+</html>

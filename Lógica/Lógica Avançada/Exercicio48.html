@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulsati - Exercício48</title>
+  </head>
+  <body>
+    <script>
+      // Escreva um programa que calcule a formula de baskara de números definidos pelo usuário
+      // A * B * C
+      // Delta B*B - 4 *A*C
+
+      function calcularRaiz() {
+        let a = parseFloat(prompt("Informe o valor de !A!"));
+        let b = parseFloat(prompt("Informe o valor de !B!"));
+        let c = parseFloat(prompt("Informe o valor de !C!"));
+
+        let delta = b * b - 4 * a * c;
+
+        if (delta > 0) {
+          let raiz1 = (-b + Math.sqrt(delta)) / (2 * a);
+          let raiz2 = (-b - Math.sqrt(delta)) / (2 * a);
+          console.log("Raiz 1: " + raiz1 + "\n   Raiz 2: " + raiz2);
+        } else if (delta == 0) {
+          let raiz = (-b + Math.sqrt(delta)) / (2 * a);
+          console.log("2 raizes: ");
+        } else {
+          let real = -b / (2 * a);
+          let i1 = Math.sqrt(-delta) / (2 * a);
+          let i2 = -Math.sqrt(-delta) / (2 * a);
+          console.log( "Raiz 1: " +real +"+" +i1 +"i" +"\n" +"Raiz 2: " +real +"+" +i2 +"i");
+        }
+      }
+      calcularRaiz();
+    </script>
+  </body>
+</html>
