@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Peça para o usuario informar qual mês ele faz aniversário, com uma função verifique se o
+      // numero do mes é par ou impar e quantos meses faltam para acabar o ano
+
+      function verificar() {
+        if (aniversario % 2 == 0) {
+          switch (aniversario) {
+            case 2:
+              alert("Fevereiro, faltam 10 meses"+"\n Mês PAR");
+              break;
+
+            case 4:
+              alert("Abril, faltam 8 meses"+"\n Mês PAR");
+              break;
+            default:
+              alert("Mês inválido");
+              break;
+          }
+        } else {
+          switch (aniversario) {
+            case 5:
+              alert("Maio, faltam 7 meses"+"\n Mês IMPAR");
+              break;
+            case 3:
+              alert("Março, faltam 9 meses"+"\n Mês IMPAR");
+              break;
+            case 1:
+              alert("Janeiro, faltam 11 meses"+"\n Mês IMPAR");
+              break;
+            default:
+              alert("Mês inválido");
+              break;
+          }
+        }
+      }
+
+      let aniversario = parseFloat(prompt("Informe o mês do seu aniversário!"));
+      verificar();
+    </script>
+  </body>
+</html>

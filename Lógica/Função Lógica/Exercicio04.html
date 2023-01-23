@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Peça para o usuário informar N numeros e adicione eles em uma lista
+      // depois com uma função verifique cada numero
+      // se ele é par e retorne ao final quantos numeros são pares e quantos são impares
+
+      function verificar() {
+        let numeros = [];
+        let continuar = prompt("Digite (S) pra continuar e (N) para sair");
+
+        while (continuar == "S" || continuar == "s") {
+          numeros += prompt("Informe a idade");
+          for (i = 0; i < numeros; i++) {
+            numeros[i] = numeros;
+          }
+          continuar = prompt("Deseja informar umo novo número ?");
+        }
+        let par = 0;
+        let impar = 0;
+        for (i = 0; i < numeros.length; i++) {
+          if (numeros[i] % 2 == 0) {
+            par++;
+          } else {
+            impar++;
+          }
+        }
+        document.writeln("Você informou " + par + " números pares");
+        document.writeln("<br>");
+        document.writeln("Você informou " + impar + " números impares");
+      }
+      verificar();
+    </script>
+  </body>
+</html>

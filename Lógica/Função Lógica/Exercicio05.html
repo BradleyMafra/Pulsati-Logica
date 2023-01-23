@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Crie um programa que pergunta ao usuário se ele deseja converter uma temperatura de grau Celsius para Farenheit 
+    // Ou vice-versa. Para cada opção, crie uma função. E depois mostre o resultado da conversão.
+
+    function celPfah(opcao) {
+        let cel = parseFloat(prompt("Informe a temperatura em Celsius."));
+        celConvertido = ((cel * 1.8) + 32);
+        // F = 37 x 1,8 + 32;
+        alert(cel+"° Celsius convertido fica: "+celConvertido +"° Farenheit")
+    }
+
+    function fahPcel(opcao) {
+        let fah = parseFloat(prompt("Informe a temperatura em Farenheit"));
+        fahConvertido = ((fah - 32)/1.8);
+        alert(fah+"° Farenheit convertido fica: "+fahConvertido +"° Celsius")
+    }
+    let opcao = prompt("Informe qual conversão deseja \n "+ "(1) Converter de celsius para Farenheit. \n"+"(2) Converter de Farenheit para Celsius.");
+
+    if(opcao == 1){
+        celPfah();
+    }else if(opcao == 2){
+        fahPcel();
+    }else
+        alert("Opção invalida")
+
+    </script>
+</body>
+</html>

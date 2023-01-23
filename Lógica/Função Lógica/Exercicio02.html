@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Crie um programa onde o usuario informa uma quantidade indeterminada de notas e 
+        // Você (COM UMA FUNÇÃO) mostra a média das notas
+
+        function calcular(quantidadeNotas) {
+        let soma = 0;
+        for (i = 0; i < quantidadeNotas; i++) {
+          let nota = parseFloat(prompt("Informe a " + [i + 1] + "° nota...."));
+          soma = (soma + nota);
+        }
+        let media = (soma / quantidadeNotas);
+        alert("Quantidade de notas: " +quantidadeNotas + "\n Média final: "+media)
+
+      }
+      let quantidadeNotas = parseFloat(prompt("Informe a quantidade de notas!"));
+      calcular(quantidadeNotas);
+    </script>
+</body>
+</html>

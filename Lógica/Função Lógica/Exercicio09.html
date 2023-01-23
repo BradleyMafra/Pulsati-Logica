@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Faça um programa que pergunte a hora ao usuário e, baseando-se no horario descrito exiba a saudação apropriada.
+
+        // 0-11 Bom dia
+        // 12-17 Boa tarde
+        // 18-23 Boa noite
+        function verificar() {
+            if (hora > 0 && hora <= 11) {
+                alert("BOM DIIA");
+            }else if(hora > 12 && hora < 17){
+                alert("BOA TARDEEEE");
+            }else if(hora > 18 && hora < 23){
+                alert("BOOOUUUUA NOITE")
+            }
+        }
+
+        let hora = parseFloat(prompt("Informe sua hora atual, usando o relógio 24h!"));
+        verificar();
+    </script>
+</body>
+</html>

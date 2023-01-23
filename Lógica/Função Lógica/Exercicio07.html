@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Peça para o usuário informar seu salário, após isso peça para informar a quantidade de aumento de 0 até 100 
+        // (Porcentagem), Com uma função calcule quanto de aumento em Reais o funcionario terá e retorne o salario antigo 
+        // o novo salario e o aumento que foi dado
+
+        function calcularSalario() {
+           let valorDeAumento = (salario * porcentagem) / 100;
+           let valorTotal = (valorDeAumento + salario);
+           document.write("Seu salário antigo: "+salario);
+           document.write("<br>")
+           document.write("Valor do seu aumento: "+valorDeAumento);
+           document.write("<br>")
+           document.write("Salário atualizado! "+valorTotal);
+        }
+
+        let salario = parseFloat(prompt("Informe o seu salário!"));
+        let porcentagem = parseFloat(prompt("Informe de 0 a 100 o aumento do seu salário!"));
+        calcularSalario();
+    </script>
+</body>
+</html>

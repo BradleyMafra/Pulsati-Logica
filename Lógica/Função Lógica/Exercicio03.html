@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Peça ao usuário para digitar várias idades.
+      // Exiba quantas pessoas são maior de idade (18 anos) e quantas são menores.
+      // COM UMA FUNÇÃO QUE VERIFICA E RETORNA SE É MAIOR OU MENOR DE IDADE
+
+      function calcular() {
+        let menor = 0;
+        let maior = 0;
+        let continuar = prompt("Digite (S) pra continuar e (N) para sair");
+
+        while (continuar == "S" || continuar == "s") {
+          let idade = prompt("Informe a idade");
+          if (idade >= 18) {
+            maior++;
+          } else {
+            menor++;
+          }
+          continuar = prompt("Deseja informar uma nova idade ?");
+        }
+        alert(
+        "Quantidade de maiores e menores de idade: " +"\n Total de menores (-18): " +menor +"\n Total de maiores (+18): " +maior);
+      }
+
+      calcular();
+
+      
+    </script>
+  </body>
+</html>

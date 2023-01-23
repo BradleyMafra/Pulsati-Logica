@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Crie um programa onde o usuário informa 2 numeros e
+      // você mostra as operações de soma, subtração, multiplicação e divisão
+      // OBS: Criar uma Função unica, que recebe qual a operação via parametro
+      // e assim mostrar na tela.
+
+      function calcular(numero1, numero2, operacao) {
+        switch (operacao) {
+          case "+":
+            let soma = numero1 + numero2;
+            alert("Operação escolhida = somar ");
+            document.writeln("O resultado da sua soma de: "+numero1+" + "+numero2+" foi: "+soma);
+            break;
+          case "-":
+            let sub = numero1 - numero2;
+            alert("Operação escolhida = subtrair ");
+            document.writeln("O resultado da sua subtração de: "+numero1+" - "+numero2+" foi: "+sub);
+            break;
+          case "*":
+            let multi = numero1 * numero2;
+            alert("Operação escolhida = multiplicar ");
+            document.writeln("O resultado da sua multiplicação de: "+numero1+" x "+numero2+" foi: "+multi);
+            break;
+          case "/":
+            let div = numero1 / numero2;
+            alert("Operação escolhida = dividir ");
+            document.writeln("O resultado da sua divisão de: "+numero1+" / "+numero2+" foi: "+div);
+            break;
+          default:
+            alert("Operação invalida");
+            break;
+        }
+      }
+
+      let numero1 = parseFloat(prompt("Informe o 1° número"));
+      let numero2 = parseFloat(prompt("Informe o 2° número"));
+      let operacao = prompt("informe a operação que desejar!");
+      calcular(numero1, numero2, operacao);
+    </script>
+  </body>
+</html>
