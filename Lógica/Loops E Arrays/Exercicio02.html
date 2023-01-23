@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Faça um programa que peça uma nota, entre zero e dez.
+      // Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
+      let nota = parseFloat(prompt("Deixe uma nota de 0 a 10 para nosso atendimento!"));
+
+      if (nota >= 0 && nota <= 10) {
+            alert("Obrigado por sua nota!");
+        }else{
+            while (nota) {
+                nota = parseFloat(prompt("Deixe uma nota de 0 a 10 para nosso atendimento!"));
+                if (nota >= 0 && nota <= 10) {
+                    alert("Obrigado pela sua nota!");
+                    break;
+                }
+            }
+        }      
+    </script>
+  </body>
+</html>

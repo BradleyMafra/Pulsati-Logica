@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Faça um programa que peça o valor do carro e o ano de lançamento e se o valor for menor que 20.000 ou
+      // O ano for menor que 2020. Pergunte de novo até ele informar um carro mais novo ou mais caro.
+
+      let carro = parseFloat(prompt("Informe o ano do carro!"));
+      let valorCarro = parseFloat(prompt("Informe o valor do carro!"));
+      if (carro > 2020 && valorCarro > 20000) {
+            alert("Obrigado por se registrar!");            
+      }else{
+        while (carro && valorCarro) {
+            carro = parseFloat(prompt("Informe o ano do carro!"));
+            valorCarro = parseFloat(prompt("Informe o valor do carro!"));
+          if (carro > 2020 && valorCarro > 20000) {
+            alert("Obrigado por se registrar!");
+            break;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

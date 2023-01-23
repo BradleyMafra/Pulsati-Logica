@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Numa eleição existem três candidatos. Faça um programa que peça o número total de eleitores.
+      // Peça para cada eleitor votar e ao final mostrar o número de votos de cada candidato.
+
+      function el() {
+        let qE = parseFloat(prompt("Informe a quantidade de ELEITORES"));
+        let J = 0; let M = 0; let C = 0;
+        for (i = 0; i < qE; i++) {
+          let e = prompt("(1) - João \n (2) - Marcos \n (3) - Cleber");
+          if (e == 1) {
+            J++;
+          } else if (e == 2) {
+            M++;
+          } else if (e == 3) {
+            C++;
+          }
+        }
+        document.write("João: " + C); document.write("<br>");
+        document.write("Marcos: " + C); document.write("<br>");
+        document.write("Cleber: " + C); document.write("<br>");
+        document.write("Total de eleitores: "+qE);
+      }
+      el();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário.
+        // Mostrando uma mensagem de erro e voltando a pedir as informações.
+
+        let nomeUsuario = prompt("Informe seu nome de usuário!");
+        let senhaUsuario = prompt("Informe sua senha:");
+
+        if (senhaUsuario != nomeUsuario) {
+            alert("Cadastro feito com sucesso!");
+        }else{
+            while (senhaUsuario) {
+                alert("Sua senha não pode ser igual ao seu nome de usuário");
+                nomeUsuario = prompt("Informe seu nome de usuário!");
+                senhaUsuario = prompt("Informe sua senha:");
+                if (senhaUsuario != nomeUsuario) {
+                    alert("Cadastro feito com sucesso!");
+                    break;
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

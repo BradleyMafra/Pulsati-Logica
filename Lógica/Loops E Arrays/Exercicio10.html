@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // O Departamento Estadual de Meteorologia lhe contratou para desenvolver um programa que leia um conjunto de 5.
+        // Temperaturas, e informe ao final a menor e a maior temperatura informada.
+        // Bem como a média das temperaturas.
+
+        let tempMenor = 0;
+        let tempMaior = 0;
+        let contador = 0;
+        let media = 0;
+
+        alert("Olá mundo!")
+        while (contador < 5) {
+            let temp = parseFloat(prompt("informe as 5 temperaturas!"));
+            media = media + temp;
+            if(temp <= tempMenor){
+                tempMenor = temp;
+            }else if (temp >= tempMaior){
+                tempMaior = temp;
+            }
+            contador++;
+        }
+        
+        document.write("A Maior temperatura informada é: "+tempMaior);
+        document.write("<br>");
+        document.write("A Menor temperatura informada é: "+tempMenor);
+        document.write("<br>");
+        document.write("A média foi: "+media/5);
+
+    </script>
+</body>
+</html>

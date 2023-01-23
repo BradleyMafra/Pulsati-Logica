@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e
+      // A quantidade de números ímpares.
+
+      let numero = 0;
+      let soma = 0;
+      let impar = 0;
+      let par = 0;
+      for (i = 0; i < 10; i++) {
+          numero = parseFloat(prompt("Informe o " + [i+1] + "° número"));
+          soma = soma + numero;
+        if (numero % 2 == 0) {
+          par++;
+        } else {
+          impar++;
+        }
+      }
+      document.writeln("Pares: "+par);
+      document.writeln("<br>")
+      document.writeln("Impares: "+impar);
+      document.writeln("<br>")
+      document.writeln("Soma: "+soma)
+    </script>
+  </body>
+</html>
