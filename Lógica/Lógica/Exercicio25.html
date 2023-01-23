@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Escreva um código que verifica se um número é perfeito ou não e exibe a mensagem correspondente.
+      function isPerfeito(numero) {
+        soma = 1;
+        for (let indice = 2; indice * indice <= numero; indice++) {
+          if (numero % indice == 0) {
+            if (indice * indice != numero) soma = soma + indice + numero / indice;
+            else soma = soma + indice;
+          }
+        }
+        if (soma == numero && numero != 1){
+          return true;
+        }else{
+          return false;
+        }
+      }
+        let numero = prompt("Informe um número");
+        alert(isPerfeito(numero))
+    </script>
+  </body>
+</html>

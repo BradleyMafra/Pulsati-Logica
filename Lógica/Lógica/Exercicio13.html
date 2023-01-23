@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // `Faça um script para calcular a Hipotenusa de um triangulo retangulo, 
+        // onde o usuario informa os catetos e o programa calcula a hipotenusa.`
+
+        let cat1 = parseFloat(prompt("Informe o 1° cateto: "));
+        let cat2 = parseFloat(prompt("Informe o 2° cateto: "));
+        let soma = cat1 * 2 + cat2 * 2;
+
+        if(soma % soma == 0)
+            alert("A hipotenusa é: "+Math.hypot(cat1, cat2));
+            else
+                alert("Número impossível de fazer o calculo")
+    </script>
+</body>
+</html>

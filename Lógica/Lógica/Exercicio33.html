@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Utilize um laço "for" para percorrer uma string e trocar 
+        // Todas as letras "a" por "x" e imprimir a string modificada.
+        let string = "paralalola";
+        contagem = 0;
+        let resultado
+        for(i = 0; i < string.length; i++){
+            contagem++;
+            for(j = 0; j < contagem; j++){
+                resultado = string.replace(/a/gi, "x");
+            }
+        }
+        alert(resultado)
+    </script>
+</body>
+</html>

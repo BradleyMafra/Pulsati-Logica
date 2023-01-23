@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Escreva um programa para ler 3 valores inteiros (considere que não serão lidos valores iguais) e escrevê-los em ordem crescente.
+      const n1 = parseFloat(prompt("Informe o 1°"));
+      const n2 = parseFloat(prompt("Informe o 2°"));
+      const n3 = parseFloat(prompt("Informe o 3°"));
+      
+      if(n1 < n2 && n1 < n3 && n2 < n3){
+        document.writeln(n1+"° "+n2+"° "+n3+"°")
+      } else if(n1 > n2 && n1 > n3 && n2 > n3){
+        document.writeln(n3+"° "+n2+"° "+n1+"°")
+      }if(n2 < n1 && n2 < n3 && n1 < n3){
+        document.writeln(n2+"° "+n1+"° "+n3+"°")
+      } else if(n2 > n1 && n2 > n3 && n1 > n3){
+        document.writeln(n3+"° "+n1+"° "+n2+"°")
+      } else if(n3 < n1 && n3 < n2 && n1 < n2){
+        document.writeln(n2+"° "+n1+"° "+n3+"°")
+      } else if(n2 > n1 && n2 > n3 && n1 > n2){
+        document.writeln(n3+"° "+n1+"° "+n2+"°")
+      }
+    </script>
+  </body>
+</html>

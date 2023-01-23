@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        // Faça um programa aonde você precisa pedir 1 numero ao usuario escreva na tela 5 numeros abaixo dele 
+        // 5 numeros acima dele e o numero dele vezes 2;
+      let nUsuario = parseInt(prompt("Informe um numero!"));
+
+      if (nUsuario > 0) {
+        document.write("2 repetições ==>");
+        document.write(nUsuario + "\n");
+        document.write(nUsuario + "\n");
+
+        document.write("  5 acima ==> ");
+        document.write(nUsuario + "\n");
+        let nFake = nUsuario + 1;
+        document.write(nFake + "\n");
+        nFake += 1;
+        document.write(nFake + "\n");
+        nFake += 1;
+        document.write(nFake + "\n");
+        nFake += 1;
+        document.write(nFake + "\n");
+
+        document.write("  5 abaixo ==> ");
+        document.write(nUsuario + "\n");
+        let nFake2 = nUsuario - 1;
+        document.write(nFake2 + "\n");
+        nFake2 -= 1;
+        document.write(nFake2 + "\n");
+        nFake2 -= 1;
+        document.write(nFake2 + "\n");
+        nFake2 -= 1;
+        document.write(nFake2 + "\n");
+      }
+    </script>
+  </body>
+</html>

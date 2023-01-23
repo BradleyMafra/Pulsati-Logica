@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //`Peça para informar 3 notas do alunos e sua quantidade de faltas para o aluno aprovar é necessario que ele tenha media acima de 7 e faltas menor que 50.`
+      let n1 = parseFloat(prompt("Informe 1° nota"));
+      let n2 = parseFloat(prompt("Informe 2° nota"));
+      let n3 = parseFloat(prompt("Informe 3° nota"));
+
+      let faltas = prompt("Iforme a quantidade de faltas");
+      let media = n1+n2+n3 / 3;
+      if (media >= 7 && faltas < 50) {
+        document.writeln("Parabéns você foi aprovado!"+media);
+      } else {
+        document.writeln("Você foi reprovado!");
+      }
+    </script>
+  </body>
+</html>

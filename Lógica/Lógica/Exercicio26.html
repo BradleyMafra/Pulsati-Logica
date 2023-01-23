@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Escreva um código que verifica se uma string é um palíndromo ou não e exibe a mensagem correspondente.
+        function verificar(string) {
+            const palin = string.length;
+
+            for(let i = 0; i < palin / 2; i++){
+                if(string[i] !== string[palin -1 - i]){
+                    return "Não é palindromo"
+                }
+            }
+            return "é palindromo"
+        }
+
+        const string = prompt("VERIFICAR SE É PALINDROMO!");
+        const resposta = verificar(string);
+        alert(resposta);
+
+    </script>
+</body>
+</html>

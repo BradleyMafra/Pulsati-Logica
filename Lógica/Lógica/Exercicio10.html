@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   `Faça um programa que peça o sexo da pessoa F ou M e a sua altura.
+      //   E mostre o peso ideal da pessoa.
+      //   ``Calculo:  Masculino: (72.7 * altura) - 58
+      //   ``Calculo:  Feminino: (62.1 * altura) - 44.7`
+
+      let sexo = prompt("Informe sua sexualidade!");
+      let altura = parseFloat(prompt("Informe sua altura"));
+      let pesoIdeal = 0;
+
+      if (sexo == "F") {
+        pesoIdeal = 62.1 * altura - 44.7;
+        alert("Seu peso ideal é de: " + pesoIdeal);
+      } else if (sexo == "M") {
+        pesoIdeal = 72.7 * altura - 58;
+        alert("Seu peso ideal é de: " + pesoIdeal);
+      } else {
+        alert("Erro 405");
+      }
+    </script>
+  </body>
+</html>

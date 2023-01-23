@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // `Criar uma calculadora, onde o usuario informa 2 números e a operação matemática que ele quer e depois mostrar o resultado na tela.`
+
+      let n1 = parseFloat(prompt("Informe um número: "));
+      let n2 = parseFloat(prompt("Informe o segundo número: "));
+      let opr = prompt("Informe a operação que deseja fazer!");
+
+      if (opr == "Soma") {
+        let soma = n1 + n2;
+        document.write("O resultado é " + soma);
+      } else if (opr == "Sub") {
+        let sub = n1 - n2;
+        document.write("O resultado da subtração é " + sub);
+      } else if (opr == "X") {
+        let mult = n1 * n2;
+        document.write("O resultado da multiplicação é " + mult);
+      } else {
+        document.write("Houve um erro!");
+      }
+    </script>
+  </body>
+</html>

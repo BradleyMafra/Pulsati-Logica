@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // `Faça um programa que peça os 3 lados de um triangulo e mostre qual o tipo: Equilátero, isoceles, Escaleno`
+
+            // `Equilatero: 3 lados iguais`
+            // `Isosceles: 2 lados iguais e 1 diferente`
+            // `Escaleno: 3 lados diferentes`
+
+            let n1 = prompt("Informe o 1° lado");
+            let n2 = prompt("Informe o 2° lado");
+            let n3 = prompt("Informe o 3° lado");
+
+            if(n1 == n2 && n2 == n3){
+                prompt("Equilatero")
+            }else if(n1 == n2 || n1 == n3 || n2 == n3){
+                prompt("Isoceles")
+            }else{
+                prompt("Escaleno")
+            }
+    </script>
+</body>
+</html>
