@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulsati - Exercício65</title>
+</head>
+<body>
+  <script>
+    // Escreva um programa que encontre o número mais distante de um dado número em uma lista.
+
+    function positivo(num) {
+        if (num < 0) {
+        num = num * -1;
+        }
+        return num;
+    }
+
+  let lista = [];
+  let tamanhoDaLista = parseInt(prompt("Informe o tamanho da lista."));
+  let num;
+
+  for (let i = 0; i < tamanhoDaLista; i++) {
+    num = (Math.random() * 100).toFixed(0);
+    lista.push(num);
+  }
+  alert(lista);
+  let encontrar = parseInt(prompt("Qual número deseja encontrar o mais próximo."));
+  let menorDistancia = -999;
+  let numeroMaisPerto;
+  for (let i = 0; i < lista.length; i++) {
+    if (positivo(encontrar - lista[i]) > menorDistancia) {
+      menorDistancia = positivo(encontrar - lista[i]);
+      numeroMaisPerto = lista[i];
+    }
+  }
+  lista.sort(function (a, b) {
+    if (a > b) return -1;
+    if (a < b) return 1;
+    return 0;
+  });
+  console.log("O número mais longe de "+ encontrar+ " é o " +numeroMaisPerto);
+</script>
+</body>
+</html>
