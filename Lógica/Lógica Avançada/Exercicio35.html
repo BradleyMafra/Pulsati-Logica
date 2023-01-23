@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Escreva um programa que calcule a média de uma lista de números com quantidade definida pelo usuário
+
+        let quantidade = prompt("Informe uma quantiade definida");
+        let numero = [];
+        let media = 0;
+        for(i = 0; i < quantidade; i++){
+            numero = parseFloat(prompt("Informe o numero"));
+            media += numero;
+        }
+        alert(media/quantidade)
+    </script>
+</body>
+</html>

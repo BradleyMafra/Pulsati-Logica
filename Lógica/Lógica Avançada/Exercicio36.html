@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Escreva um programa que ordene uma lista de números em ordem crescente.
+
+      let numero = [1, 4, 2, 5, 3, 6, 9, 7, 10, 8];
+      let contador = 0;
+
+      document.writeln("Antes da troca: ");
+      for (let i = 0; i < numero.length; i++) {
+        document.write(numero[i]+", ");
+      }
+
+      do {
+        troca = 0;
+        contador++;
+        for (i = 0; i < numero.length; i++) {
+          if (numero[i] > numero[i + 1]) {
+            copia = numero[i];
+            numero[i] = numero[i + 1];
+            numero[i + 1] = copia;
+            troca = 1;
+          }
+        }
+      } while (troca);
+      document.writeln("<br><br> Depois da troca: ")
+      for (i = 0; i < numero.length; i++) {
+        document.write(numero[i], ", ");
+      }
+    </script>
+  </body>
+</html>

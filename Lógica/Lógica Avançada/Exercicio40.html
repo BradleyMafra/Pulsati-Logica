@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Escreva um programa que verifique se um número é capicua
+      // Exemplos de números que geram capicua:
+      // Número 123:
+      // 123 + 321 = 444 (é um número capicua).
+
+
+      numero = prompt("Informe");
+      const reversedNum = numero => parseFloat(numero.toString().split('').reverse().join('')) * Math.sign(numero)
+      
+      let numReverso = reversedNum(numero);
+      if(numero == numReverso){
+        alert("É capicua"+"\n Número: "+numero+"\n Reverso: "+numReverso);
+      }
+        else
+        alert("Não é capicua"+"\n Número: "+numero+"\n Reverso: "+numReverso);
+    </script>
+  </body>
+</html>
