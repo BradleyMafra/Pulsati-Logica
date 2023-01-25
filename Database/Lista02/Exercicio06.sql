@@ -3,4 +3,4 @@
 
 SELECT 'A idade do(a) funcionario(a) ' || primeiro_nome || ' ' || segundo_nome || ' é ', TRUNC((SYSDATE - DATA_NASCIMENTO) /365) as IDADE, telefone
 FROM bradley_mafra_funcionarios
-WHERE TRUNC((SYSDATE - DATA_NASCIMENTO) /365) > 20 OR telefone LIKE '9%'
+WHERE TRUNC((SYSDATE - DATA_NASCIMENTO) /365) > 20 OR telefone LIKE '%9'
