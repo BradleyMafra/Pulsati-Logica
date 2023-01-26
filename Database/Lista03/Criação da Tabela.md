@@ -1,12 +1,11 @@
 # CRIAÇÃO DA TABELA
-CREATE TABLE bradley_filmes (
+### CREATE TABLE bradley_filmes (
     id NUMBER PRIMARY KEY NOT NULL,
     nome VARCHAR2(250) NOT NULL, 
     descricao VARCHAR2(500) NOT NULL, 
     data_lancamento DATE NOT NULL, 
     quantidade_vendas NUMBER NOT NULL, 
-    pais_origem VARCHAR2(250) NOT NULL
-);
+    pais_origem VARCHAR2(250) NOT NULL);
 
 commit;
 
