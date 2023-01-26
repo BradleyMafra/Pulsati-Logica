@@ -3,5 +3,5 @@
 
 
 SELECT AVG(salario) AS Salario_Total_Dos_Funcionarios
-FROM bradley_funcionarios
-ORDER BY funcao;
+    FROM bradley_funcionarios
+        ORDER BY funcao;
