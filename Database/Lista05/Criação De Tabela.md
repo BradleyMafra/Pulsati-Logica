@@ -21,3 +21,8 @@
     fk_id_produto NUMBER,
     FOREIGN KEY ( fk_id_cliente ) REFERENCES bradley_cliente ( id_cliente ),
     FOREIGN KEY ( fk_id_produto ) REFERENCES bradley_produto ( id_produto ));
+
+### ALTER TABLE bradley_produto
+    ADD (
+    preco_produto NUMBER
+    );
