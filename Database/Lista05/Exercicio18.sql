@@ -1,1 +1,0 @@
--- Selecione quais clientes nao compraram nada
