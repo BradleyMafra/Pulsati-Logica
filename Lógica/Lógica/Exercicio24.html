@@ -11,18 +11,17 @@
       // Escreva um código que verifica se um número é primo ou não e exibe a mensagem correspondente.
       // Número divisivel por ele mesmo e por 1.
       let n = prompt("Informe um numero inteiro!");
-      let isPrimo = true;
+      let contador = 0;
 
-      for (let i = 2; i < n; i++) {
+      for (let i = 1; i < n; i++) {
         if (n % i == 0) {
-          isPrimo = false;
-          alert("Não é primo");
-          break;
-        } else {
-          alert("É primo");
-          break;
+          contador++;
         }
       }
+      if(contador == 2)
+        alert("É primo")
+         else
+          alert("Não é primo")
     </script>
   </body>
 </html>
